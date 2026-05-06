@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "Bash(python *)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "spawner",
+    "scisummary"
+  ]
+}
