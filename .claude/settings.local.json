@@ -8,7 +8,9 @@
       "Bash(command -v python)",
       "Bash(command -v python3)",
       "Bash(command -v mutool)",
-      "Bash(pdftotext *)"
+      "Bash(pdftotext *)",
+      "mcp__spawner__spawner_orchestrate",
+      "mcp__scisummary__find-new-papers"
     ]
   },
   "enabledMcpjsonServers": [
