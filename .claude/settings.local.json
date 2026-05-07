@@ -10,7 +10,9 @@
       "Bash(command -v mutool)",
       "Bash(pdftotext *)",
       "mcp__spawner__spawner_orchestrate",
-      "mcp__scisummary__find-new-papers"
+      "mcp__scisummary__find-new-papers",
+      "PowerShell(python -c \"import docx; print\\('python-docx disponible'\\)\")",
+      "PowerShell(python --version)"
     ]
   },
   "enabledMcpjsonServers": [
