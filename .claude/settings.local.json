@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(PYTHONIOENCODING=utf-8 python *)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(command -v pdftotext)",
+      "Bash(command -v pdfinfo)",
+      "Bash(command -v python)",
+      "Bash(command -v python3)",
+      "Bash(command -v mutool)",
+      "Bash(pdftotext *)"
     ]
   },
   "enabledMcpjsonServers": [
