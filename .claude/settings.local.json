@@ -12,7 +12,10 @@
       "mcp__spawner__spawner_orchestrate",
       "mcp__scisummary__find-new-papers",
       "PowerShell(python -c \"import docx; print\\('python-docx disponible'\\)\")",
-      "PowerShell(python --version)"
+      "PowerShell(python --version)",
+      "mcp__scisummary__list-papers",
+      "PowerShell(python -c \"import docx; print\\('python-docx available'\\)\")",
+      "PowerShell(Get-Item *)"
     ]
   },
   "enabledMcpjsonServers": [
