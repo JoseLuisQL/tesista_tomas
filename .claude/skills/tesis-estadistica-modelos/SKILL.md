@@ -27,10 +27,13 @@ Rutas principales:
 - Revisar CSV, carpetas de dataset, manifiestos y predicciones.
 - Comparar CNN/EfficientNetB0 y Swin-Tiny.
 - Analizar accuracy, balanced accuracy, precision, recall, F1-score y matriz de confusión.
+- Generar o proponer gráficos profesionales solo con datos verificados, usando `chart-visualization` o visualizaciones reproducibles cuando corresponda.
 - Separar resultados globales, real-only y synthetic-only.
 - Revisar si ambos modelos usaron el mismo test.
 - Recomendar pruebas pareadas como McNemar.
 - Recomendar intervalos de confianza o bootstrap.
+- Desarrollar la estructura del capítulo de resultados con tablas, figuras, lectura estadística e interpretación prudente.
+- Alinear cada resultado con objetivo específico, hipótesis si existe y métrica correspondiente.
 - Identificar riesgos de fuga de datos, duplicados, sobreajuste y métricas infladas.
 </responsibilities>
 
@@ -55,6 +58,28 @@ Estos datos deben verificarse antes de usarse en redacción definitiva.
 - No usar métricas agregadas sin revisar errores por clase.
 </statistical_cautions>
 
+<results_development_protocol>
+Para desarrollar resultados de tesis:
+1. parte de los objetivos específicos, no de las métricas sueltas;
+2. identifica qué tabla, figura o métrica responde a cada objetivo;
+3. separa descripción del resultado, interpretación estadística y discusión comparativa;
+4. no repitas todos los números de la tabla en el texto: interpreta patrones, errores y límites;
+5. si hay hipótesis, indica si los datos la apoyan o no, sin afirmar prueba estadística si no se aplicó;
+6. cuando compares CNN y Swin, exige mismo conjunto de prueba y análisis pareado antes de afirmar superioridad;
+7. reporta incertidumbre, tamaño de muestra, distribución real/sintética y errores por clase;
+8. prepara texto defendible ante jurado, con cautela metodológica.
+</results_development_protocol>
+
+<statistical_decision_protocol>
+Antes de recomendar una prueba o análisis:
+- identifica variable dependiente, unidad de análisis, escala de medición y diseño de comparación;
+- verifica si las predicciones son pareadas por imagen;
+- usa McNemar si se comparan dos clasificadores sobre los mismos casos con resultado correcto/incorrecto;
+- usa intervalos de confianza o bootstrap si se necesita incertidumbre de métricas;
+- no uses pruebas paramétricas sin justificar supuestos;
+- si faltan predicciones por muestra, declara que la comparación queda descriptiva.
+</statistical_decision_protocol>
+
 <analysis_protocol>
 1. Leer métricas agregadas.
 2. Leer reportes por clase.
@@ -64,7 +89,8 @@ Estos datos deben verificarse antes de usarse en redacción definitiva.
 6. Revisar splits y origen real/sintético.
 7. Proponer análisis pareado.
 8. Preparar tablas para tesis.
-9. Redactar interpretación con cautela.
+9. Preparar gráficos académicos con título, ejes, leyenda, nota/fuente y trazabilidad de datos.
+10. Redactar interpretación con cautela.
 10. Formular limitaciones.
 </analysis_protocol>
 
@@ -75,6 +101,9 @@ Estos datos deben verificarse antes de usarse en redacción definitiva.
 ### Métricas principales
 [Tabla]
 
+### Correspondencia con objetivos e hipótesis
+[Objetivo específico, hipótesis si existe, métrica/tabla/figura que lo responde]
+
 ### Comparación CNN vs Swin
 [Interpretación prudente]
 
@@ -83,6 +112,9 @@ Estos datos deben verificarse antes de usarse en redacción definitiva.
 
 ### Análisis adicional recomendado
 [McNemar, IC, bootstrap, errores por clase]
+
+### Estructura sugerida para resultados
+[Orden de tablas, figuras e interpretación]
 
 ### Texto sugerido para tesis
 [Solo si el usuario lo solicita]
